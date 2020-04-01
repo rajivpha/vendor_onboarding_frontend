@@ -1,0 +1,1 @@
+var BASEURL = "http://localhost:3000/";

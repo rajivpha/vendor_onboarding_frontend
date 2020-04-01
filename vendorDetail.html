@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+
+    <!-- Title Page-->
+    <title>Vendor Detail</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="css/font-face.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/theme.css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+
+
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+            <header class="header-desktop">
+
+            </header>
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1" id="vendorName">Details of Vendor: </h2>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="au-chat-info">
+                                            <div class="avatar-wrap">
+                                                <div class="avatar avatar--big" id="profilePhoto">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <span class="nick" id="storeName">
+                                        </span>
+                                    </div>
+                                    <div class="card-body card-block">
+                                        <form method="post" id="singleSite" class="form-horizontal">
+                                            <div class="row form-group">
+                                                <div class="col col-md-4">
+                                                    <label class=" form-control-label">Owner Name</label>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <p class="form-control-static" id="ownersName"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-4">
+                                                    <label class=" form-control-label"> PAN Number</label>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <p class="form-control-static" id="panVat"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-4">
+                                                    <label class=" form-control-label">Mobile Number</label>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <p class="form-control-static" id="mobileNumber"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-4">
+                                                    <label class=" form-control-label">Email Address</label>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <p class="form-control-static" id="emailAdd"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-4">
+                                                    <label class=" form-control-label">Shop Category</label>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <p class="form-control-static" id="shopCategory"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-4">
+                                                    <label class=" form-control-label">Business Address</label>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <p class="form-control-static" id="blandmarkNearby">Landmark Nearby:
+                                                    </p>
+                                                    <p class="form-control-static" id="bprovince">Province: </p>
+                                                    <p class="form-control-static" id="bmunicipality">Municipality:</p>
+                                                    <p class="form-control-static" id="bward"> Ward: </p>
+                                                    <p class="form-control-static" id="barea">Area: </p>
+                                                    <p class="form-control-static" id="bfullAddress">Full Address: </p>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group" id="corporateAddress">
+
+                                            </div>
+
+                                            <div class="row form-group">
+                                                <div class="col col-md-4">
+                                                    <label class=" form-control-label">Status</label>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <p class="form-control-static" id="status"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-4">
+                                                    <label class=" form-control-label">Listed By</label>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <p class="form-control-static" id="addedBy"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-4">
+                                                    <label class=" form-control-label">Listed On </label>
+                                                </div>
+                                                <div class="col-12 col-md-8">
+                                                    <p class="form-control-static" id="addedOn"></p>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col col-md-3">
+                                                    <label for="textarea-input"
+                                                        class=" form-control-label">Remarks</label>
+                                                </div>
+                                                <div class="col-12 col-md-9">
+                                                    <textarea name="textarea-input" id="textarea-input" rows="9"
+                                                        placeholder="Write Remarks" class="form-control"
+                                                        id="remarks"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <button type="submit" class="btn btn-success btn-sm" value="approved">
+                                                    <i class="fa fa-dot-circle-o"></i> Approve
+                                                </button>
+                                                <button type="submit" class="btn btn-danger btn-sm" value="rejected">
+                                                    <i class="fa fa-ban"></i> Reject
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Store Location</h2>
+                                </div>
+                                <div id="mapid"></div>
+                                <hr>
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Inside Photos</h2>
+                                </div>
+                                <div id="insidePhotosMainDiv">
+                                    <div id="InsidePhoto" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators" id="indexInside">
+
+                                        </ol>
+                                        <div class="carousel-inner" id="imagesCarouselInside" role="listbox"
+                                            style="max-width:100%; max-height:250px !important;">
+
+
+                                        </div>
+                                        <a class="carousel-control-prev" href="#InsidePhoto" role="button"
+                                            data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#InsidePhoto" role="button"
+                                            data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Outside Photos</h2>
+                                </div>
+                                <div id="outsidePhotosMainDiv">
+                                    <div id="OutsidePhoto" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators" id="indexOutside">
+
+                                        </ol>
+                                        <div class="carousel-inner" id="imagesCarouselOutside" role="listbox"
+                                            style="max-width:100%; max-height:250px !important;">
+
+                                        </div>
+                                        <a class="carousel-control-prev" href="#OutsidePhoto" role="button"
+                                            data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#OutsidePhoto" role="button"
+                                            data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">Verification Documents Photos</h2>
+                                </div>
+                                <div id="docsPhotosMainDiv">
+                                    <div id="docsPhoto" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators" id="indexDocs">
+
+                                        </ol>
+                                        <div class="carousel-inner" id="imagesCarouselDocs" role="listbox"
+                                            style="max-width:100%; max-height:250px !important;">
+
+                                        </div>
+                                        <a class="carousel-control-prev" href="#docsPhoto" role="button"
+                                            data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#docsPhoto" role="button"
+                                            data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <hr>
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- END MAIN CONTENT-->
+                <!-- END PAGE CONTAINER-->
+
+            </div>
+
+        </div>
+
+        <!-- Jquery JS-->
+        <script src="vendor/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap JS-->
+        <script src="vendor/bootstrap-4.1/popper.min.js"></script>
+        <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+        <!-- Vendor JS       -->
+        <script src="vendor/slick/slick.min.js">
+        </script>
+        <script src="vendor/wow/wow.min.js"></script>
+        <script src="vendor/animsition/animsition.min.js"></script>
+        <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+        </script>
+        <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
+        <script src="vendor/counter-up/jquery.counterup.min.js">
+        </script>
+        <script src="vendor/circle-progress/circle-progress.min.js"></script>
+        <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+        <script src="vendor/chartjs/Chart.bundle.min.js"></script>
+        <script src="vendor/select2/select2.min.js">
+        </script>
+        <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+
+
+
+        <!-- Main Script -->
+        <script src="js/main.js"></script>
+        <script src="js/url.js"></script>
+        <script src="js/include.js"></script>
+        <script src="js/vendorDetail.js"></script>
+
+
+
+
+</body>
+
+</html>
+<!-- end document-->
